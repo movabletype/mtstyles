@@ -127,6 +127,7 @@ h1 a, h1 a:visited, h1 a:hover
 	padding: 0;
 	margin: 0;
 	text-decoration: none;
+	color: black;
 }
 #footer {
 	text-align: right;
@@ -263,6 +264,7 @@ h2.entry-title a:hover
     font-style: italic;
 }
 
+h2.trackbacks-header,
 .comments h2, .comments h3 {
     color: #2A2A2A;
     font-size: 14px;
@@ -271,6 +273,26 @@ h2.entry-title a:hover
     font-family: Helvetica, Arial, Sans-Serif;
     border-bottom: 1px solid #CCC;
 }
+.trackbacks-info { font-size: 14px; }
+
+#comments .asset-meta {
+    color: #CCC;
+    font-size: 11px;
+    font-family: Verdana,Helvetica, Arial, Sans-Serif;
+    text-transform: none;
+    font-style: normal;
+    background: none;
+}
+#comments .asset-meta img { padding-left: 5px; width: 12px; height: 12px; }
+#comments .asset-meta .author {
+    color: rgb(0, 96, 255);
+    font-family: Georgia,"Times New Roman",Times,Serif;
+    font-size: 16px;
+    text-decoration: underline;
+    font-weight: bold;
+}
+#comments .comment { border-bottom: 1px dotted #CCC; margin-bottom: 20px; }
+#comments .comment-content { margin: 0px 0 0 10px; font-size: 14px; }
 
 h1.archive-title
 {
