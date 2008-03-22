@@ -82,7 +82,8 @@ a:hover
 }
 
 .entry-title a:hover {
-	background-color: white;
+	background-color: #EEE;
+	color: black;
 }
 .entry-title a,
 .entry-title {
