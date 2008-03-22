@@ -1,0 +1,247 @@
+@import url(base-weblog.css);
+body {
+	font-family: 'Lucida Grande',Verdana,Arial,Sans-Serif;
+	border-top-width: 6px;
+	border-top-style: solid;
+	border-top-color: rgb(40, 154, 207);
+	border-bottom-width: 6px;
+	border-bottom-style: solid;
+	border-bottom-color: rgb(40, 154, 207);
+	color: #444444;
+	background: white;
+}
+a {
+	text-decoration: none;
+	color: rgb(51, 136, 204);
+}
+a:link, a:visited, a:active
+{
+    outline-color: invert;
+/*    outline-style: none; */
+    outline-width: medium;
+}
+a:hover
+{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-color: rgb(51, 136, 204);
+}
+
+#container {
+	margin: 0 auto 0 auto;
+	width: 900px;
+}
+#pagebody {
+	margin-top: 25px;
+}
+.layout-three-column #alpha {
+	width: 200px;
+	float: right;
+}
+.layout-three-column #beta {
+	width: 450px;
+	float: left;
+}
+.layout-three-column #gamma {
+	width: 200px;
+	float: right;
+	margin: 0 20px 0 20px;
+}
+
+
+.layout-two-column-left #alpha {
+	width: 200px;
+	float: left;
+}
+.layout-two-column-left #beta {
+	width: 650px;
+	float: left;
+	margin: 0 0 0 25px;
+}
+
+.layout-two-column-right #alpha {
+	width: 650px;
+	float: left;
+	margin: 0 25px 0 0;
+}
+.layout-two-column-right #beta {
+	width: 200px;
+	float: left;
+}
+
+
+
+
+h1#banner-header {
+	font-family: Verdana, "Bitstream Vera Sans", Sans-Serif;
+	text-transform: lowercase;
+	font-weight: bold;
+	margin: 10px 0 0 0;
+	font-size: 2.5em;
+	letter-spacing: -1px;
+}
+	h1#banner-header a {
+		color: black;
+	}
+	h1#banner-header a:hover {
+		color: black;
+		background: none;
+	}
+	
+h2#banner-description {
+	font-size: 13px;
+	font-family: Verdana, "Bitstream Vera Sans", Sans-Serif;
+	margin: 0;
+}
+
+#pagebody h3.entry-header a:hover {
+	background-color: white;
+}
+#pagebody h3.entry-header a,
+#pagebody h3.entry-header {
+	font-size: 20px;
+	font-family: "Tahoma";
+	color: rgb(68,68,68);
+	text-align: left;
+}
+h2.date-header {
+	display: none;
+}
+h2.module-header {
+	font-size: 13px;
+	font-weight: bold;
+	color: rgb(85, 85, 85);
+	text-transform: uppercase;
+}
+	h2.module-header a {
+	    color: rgb(68, 68, 68);
+	}
+#pagebody h3.module-header {
+	font-size: 12px;
+	font-weight: bold;
+	color: rgb(85, 85, 85);
+	text-align: left;
+}
+.module {
+	margin-bottom: 10px;
+}
+.module ul.module-list,
+.module ul.archive-list
+{
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+	list-style-image: none;
+	list-style-position: outside;
+}
+
+.module li.module-list-item {
+	padding-left: 0px;
+	margin-left: 0px;
+}
+.module .module-content {
+	padding: 0;
+	margin: 0;
+}
+.module-content .thumbnail img {
+	padding: 5px;
+	margin: 5px;
+	border: 1px solid #999999;
+}
+.entry-content {
+	margin-left: 0;
+	line-height: 170%;
+}
+.entry-footer, .entry-footer a {
+	color: #9C9C9C;
+	text-align: left;
+	margin-left: 0;
+}
+.module-categories a {
+	color: rgb(153,153,153);
+	display:block;
+}
+.module-categories {
+	text-transform: uppercase;
+	font-size: 12px;
+	color: rgb(153,153,153);
+	line-height: 14px;
+}
+.module-categories li.module-list-item li.module-list-item {
+	margin-left: 10px;
+	font-size: 10px;
+}
+.module-search h2.module-header {
+	display: none;
+}
+.module-categories a:hover {
+     color : #000000;
+     background-color : transparent;
+}
+.entry-footer a:hover {
+	color: #ffffff;
+}
+img.photo {
+	border-top: 1px solid #e9dece;
+	border-right:1px solid #B6AD9D;
+	border-bottom:1px solid #B6AD9D;
+	border-left:  1px solid #e9dece;
+	background-color: #fff;
+	padding: 8px;
+}
+#pagebody h3 {
+	font-size: 20px;
+	font-family: "Tahoma";
+	color: rgb(68,68,68);
+	text-align: center;
+}
+.comments-content {
+	padding-left: 0;
+}
+.comment-content {
+	line-height: 175%;
+	margin-left: 0;
+}
+p.comment-footer {
+	font-family: "Tahoma";
+	font-size: 14px;
+	margin-left: 0;
+}
+p.comment-footer a {
+	font-weight: bold;
+}
+.comments-open-content {
+	margin-left: 0;
+	line-height: 175%;
+}
+textarea#comment-text {
+	width: 400px;
+}
+p#comments-open-text {
+	clear: both;
+	margin-top: 10px;
+}
+#comments-open-data label {
+	float: left;
+	font-weight: bold;
+	font-size: 10px;
+	font-family: Verdana, Sans-Serif;
+	text-transform: lowercase;
+	margin-right: 10px;
+	text-align: right;
+}
+.comments-open-data p {
+	margin-top: 10px;
+}
+#pagebody .search-results-container h3 {
+	text-align: left;
+}
+#pagebody .entry-content h2
+{
+        font-size: 13px;
+        font-weight: bold;
+        color: #525252;
+        text-align: left;
+        font-family: 'Lucida Grande',Verdana,Arial,Sans-Serif;
+        border-bottom: 1px solid #CCCCCC;
+}
