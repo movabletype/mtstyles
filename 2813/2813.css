@@ -1,4 +1,11 @@
-@import url(base-weblog.css);
+/*
+A theme adapted by Byrne Reese from the original 2813 theme by ???
+name: 2813
+designer: TODO
+designer_url: http://www.tubetorial.com/
+layouts: layout-wtt
+*/
+
 body {
 	font-family: 'Lucida Grande',Verdana,Arial,Sans-Serif;
 	border-top-width: 6px;
@@ -17,7 +24,6 @@ a {
 a:link, a:visited, a:active
 {
     outline-color: invert;
-/*    outline-style: none; */
     outline-width: medium;
 }
 a:hover
@@ -27,106 +33,106 @@ a:hover
     background-color: rgb(51, 136, 204);
 }
 
-#container {
+#container-inner {
 	margin: 0 auto 0 auto;
 	width: 900px;
+	padding: 0;
 }
-#pagebody {
-	margin-top: 25px;
-}
-.layout-three-column #alpha {
-	width: 200px;
-	float: right;
-}
-.layout-three-column #beta {
+#content-inner { padding: 0; margin: 0; }
+.layout-wtt #alpha-inner,
+.layout-wtt #alpha {
 	width: 450px;
 	float: left;
 }
-.layout-three-column #gamma {
+.layout-wtt #beta-inner,
+.layout-wtt #beta {
 	width: 200px;
-	float: right;
-	margin: 0 20px 0 20px;
+	left: 240px;
 }
-
-
-.layout-two-column-left #alpha {
+.layout-wtt #gamma-inner,
+.layout-wtt #gamma {
 	width: 200px;
-	float: left;
+	right: 180px;
 }
-.layout-two-column-left #beta {
-	width: 650px;
-	float: left;
-	margin: 0 0 0 25px;
-}
+#header-inner { padding: 20px 0 20px 0; }
 
-.layout-two-column-right #alpha {
-	width: 650px;
-	float: left;
-	margin: 0 25px 0 0;
-}
-.layout-two-column-right #beta {
-	width: 200px;
-	float: left;
-}
-
-
-
-
-h1#banner-header {
+#alpha-inner, #beta-inner, #gamma-inner { padding: 0; margin: 0; width: 100%; }
+#header-name {
 	font-family: Verdana, "Bitstream Vera Sans", Sans-Serif;
 	text-transform: lowercase;
 	font-weight: bold;
-	margin: 10px 0 0 0;
-	font-size: 2.5em;
+	margin: 0;
+	font-size: 28px;
 	letter-spacing: -1px;
 }
-	h1#banner-header a {
-		color: black;
-	}
-	h1#banner-header a:hover {
-		color: black;
-		background: none;
-	}
+#header-name a {
+	color: black;
+	text-decoration: none;
+}
+#header-name a:hover {
+	color: black;
+	background: none;
+	text-decoration: underline;
+}
 	
-h2#banner-description {
+#header-description {
 	font-size: 13px;
 	font-family: Verdana, "Bitstream Vera Sans", Sans-Serif;
 	margin: 0;
 }
 
-#pagebody h3.entry-header a:hover {
+.entry-title a:hover {
 	background-color: white;
 }
-#pagebody h3.entry-header a,
-#pagebody h3.entry-header {
+.entry-title a,
+.entry-title {
 	font-size: 20px;
 	font-family: "Tahoma";
 	color: rgb(68,68,68);
 	text-align: left;
+	text-decoration: none;
+	padding: 0;
+	margin:0;
 }
+.entry-content {
+	font-size: 13px;
+	margin: 0;
+	padding: 0;
+}
+.asset-meta {
+	font-family: Verdana, "Bitstream Vera Sans", Sans-Serif;
+	font-size: 12px;
+	color: #999;	
+	padding: 0;
+	margin:0;
+}
+.asset-meta a {
+	text-decoration: none;
+	color: #666;
+}
+
 h2.date-header {
 	display: none;
 }
-h2.module-header {
+.widget-header {
 	font-size: 13px;
 	font-weight: bold;
 	color: rgb(85, 85, 85);
 	text-transform: uppercase;
 }
-	h2.module-header a {
-	    color: rgb(68, 68, 68);
-	}
-#pagebody h3.module-header {
+.widget-header a {
+        color: rgb(68, 68, 68);
+}
+h3.widget-header {
 	font-size: 12px;
 	font-weight: bold;
 	color: rgb(85, 85, 85);
 	text-align: left;
 }
-.module {
+.widget {
 	margin-bottom: 10px;
 }
-.module ul.module-list,
-.module ul.archive-list
+.widget ul
 {
 	padding: 0;
 	margin: 0;
@@ -135,61 +141,60 @@ h2.module-header {
 	list-style-position: outside;
 }
 
-.module li.module-list-item {
+.widget li {
+        font-family: 'Lucida Grande',Verdana,Arial,Sans-Serif;
 	padding-left: 0px;
 	margin-left: 0px;
+	margin-bottom: 8px;
+	font-size: 0.8em;
 }
-.module .module-content {
+.widget-content {
 	padding: 0;
 	margin: 0;
 }
-.module-content .thumbnail img {
+.widget-content .thumbnail img {
 	padding: 5px;
 	margin: 5px;
 	border: 1px solid #999999;
 }
-.entry-content {
+.asset-body {
 	margin-left: 0;
 	line-height: 170%;
 }
-.entry-footer, .entry-footer a {
+.asset-footer, .asset-footer a {
 	color: #9C9C9C;
 	text-align: left;
 	margin-left: 0;
 }
-.module-categories a {
+.widget-archive-category a {
 	color: rgb(153,153,153);
-	display:block;
+	display: block;
 }
-.module-categories {
+.widget-archive-category {
 	text-transform: uppercase;
-	font-size: 12px;
+	font-size: 16px;
 	color: rgb(153,153,153);
 	line-height: 14px;
 }
-.module-categories li.module-list-item li.module-list-item {
+.widget li a { text-decoration: none; }
+.widget li a:hover { color: white; text-decoration: none; }
+.widget-archive-category li li {
 	margin-left: 10px;
 	font-size: 10px;
 }
-.module-search h2.module-header {
+.widget-search .widget-header {
 	display: none;
 }
-.module-categories a:hover {
+input#search { width: 100px; }
+.widget-categories a:hover {
      color : #000000;
      background-color : transparent;
 }
-.entry-footer a:hover {
+.asset-footer a:hover {
 	color: #ffffff;
 }
-img.photo {
-	border-top: 1px solid #e9dece;
-	border-right:1px solid #B6AD9D;
-	border-bottom:1px solid #B6AD9D;
-	border-left:  1px solid #e9dece;
-	background-color: #fff;
-	padding: 8px;
-}
-#pagebody h3 {
+
+h3 {
 	font-size: 20px;
 	font-family: "Tahoma";
 	color: rgb(68,68,68);
@@ -233,10 +238,10 @@ p#comments-open-text {
 .comments-open-data p {
 	margin-top: 10px;
 }
-#pagebody .search-results-container h3 {
+.search-results-container h3 {
 	text-align: left;
 }
-#pagebody .entry-content h2
+.entry-content h2
 {
         font-size: 13px;
         font-weight: bold;
@@ -244,4 +249,15 @@ p#comments-open-text {
         text-align: left;
         font-family: 'Lucida Grande',Verdana,Arial,Sans-Serif;
         border-bottom: 1px solid #CCCCCC;
+}
+.widget-pages li a {
+	color: #999;	
+        font-family: 'Lucida Grande',Verdana,Arial,Sans-Serif;
+	font-size: 18px;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+.widget-pages li a:hover {
+        color: #525252;
+	background: none;
 }
