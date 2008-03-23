@@ -1,0 +1,620 @@
+/*
+
+A Six Apart theme adapted for Movable Type default templates 
+name: Hemmingway White Black 
+designer: Bryan Tighe 
+designer_url: http://travelsofbryan.vox.com 
+layouts: layout-wt
+*/
+
+
+/*
+ 
+ The various Hemmingway MT Styles all share the same base styles below.
+ If you want to change the colors to create another style,
+ go to the bottom of this css file and edit those classes.
+ 
+*/
+
+/* Default ---------------------------------------------------------------- */
+
+/* Global */
+
+body {
+    font: normal small "Lucida Grande", Helvetica, Verdana, hirakakupro-w3, osaka, "ms pgothic", sans-serif;
+}
+
+
+/* Header */
+
+#header {
+
+}
+
+#header-inner {
+    position: relative;
+}
+
+#header-name {
+    margin: 0 0 5px;
+    line-height: 1;
+}
+
+#header-description {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.125;
+}
+
+#header a {
+    text-decoration: none;
+}
+
+#header a:hover {
+    text-decoration: none;
+    color: #000000;
+}
+
+
+/* Content */
+
+.asset-header
+{
+    float: left;
+    width: 30%;
+    height: 100%;
+}
+
+.asset-name {
+    font-family: "Lucida Grande", Helvetica, Verdana, Arial, sans-serif;
+    font-size: medium;
+    font-weight: bold;
+}
+
+.asset-name a {
+    text-decoration: none;
+}
+
+.asset-name a:hover {
+    color: #000000;
+    text-decoration: none;
+}
+
+.asset-content {
+    margin: 0;
+    float: right;
+    overflow: hidden;
+    width: 65%;
+    clear: none;
+}
+
+.asset-more-link {
+    font-weight: bold;
+}
+
+.asset-meta {
+    color: #999999;
+    font-size: x-small;
+}
+
+
+
+.asset-meta span.separator
+{
+    visibility: hidden;
+    display: block;
+    height: 1px;
+}
+
+.asset-footer {
+    margin: 10px 0px 45px 0px;
+    border: 0px;
+    float: right;
+    width: 65%;
+}
+
+.content-nav {
+    margin: 5px 0 10px;
+}
+
+.archive-title {
+    margin: 5px 0 30px;
+    font-size: medium;
+    font-weight: bold;
+}
+
+.widget-header,
+.trackbacks-header,
+.comments-header,
+.comments-open-header,
+.archive-header,
+.search-form-header,
+.search-results-header {
+    margin: 0;
+    padding: 5px 0;
+    font-size: small;
+    font-weight: bold;
+}
+
+.search-results-header {
+    margin-bottom: .25em;
+}
+
+.asset-more-link,
+.asset-meta,
+.typelist-thumbnailed {
+    font-size: x-small;
+}
+
+/* Footer */
+
+#footer-content,
+#footer-content a {
+    color: #000000;
+}
+
+
+/* Utility */
+
+.widget-header,
+.trackbacks-header,
+.comments-header,
+.comments-open-header,
+.archive-header,
+.search-form-header,
+.search-results-header {
+    /* ie win (5, 5.5, 6) bugfix */
+    p\osition: relative;
+    width: 100%;
+    w\idth: auto;
+}
+
+.entry-categories-header, .entry-tags-header
+{
+    color: #666666;
+}
+
+
+/* Global ----------------------------------------------------------------- */
+
+body {
+    color: #444444;  
+    font-family: "Lucida Grande", Helvetica, Arial, Verdana, sans-serif;   
+    background-color: #ffffff; 
+}
+
+a {
+    color: #555555; 
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+
+/* Layout ----------------------------------------------------------------- */
+
+#container-inner,
+#content {
+    background-color: #ffffff;
+}
+
+#header-inner, #content-inner, #footer-inner {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+#header-inner, #beta-inner, #gamma-inner {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+#content { 
+    margin-top: 20px;  
+}
+
+#container-inner {
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+}
+
+#header-inner,
+#footer-inner {
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+}
+
+
+/* Header ----------------------------------------------------------------- */
+
+#header { 
+
+}
+
+#header a {
+    color: #333333;
+    font-weight: normal;
+}
+
+#header-content {
+    width: 842px; 
+    margin: 40px 0 90px 20px;
+}
+
+#header-name {
+    float: left;
+    border-right: 1px solid #666666;
+    padding: 5px 18px 5px 0px;
+    font-size: x-large;
+    font-family: "Lucida Grande",  Helvetica, Verdana, Arial, sans-serif;
+}
+
+#header-description {
+    float: left;
+    color: #666666;
+    padding: 10px 0px 10px 6px;
+    margin-left: 10px;
+    font-size: small;
+    font-family: Helvetica, Arial, Verdana, sans-serif; 
+}
+
+
+/* Content ---------------------------------------------------------------- */
+
+.asset-name,
+.asset-name a,
+.archive-title {
+    color: #333333;
+}
+
+.asset-footer {
+
+}
+
+.comments-header,
+.comments-open-header,
+.trackbacks-header,
+.archive-header,
+.search-form-header,
+.search-results-header {
+    color: #333333;
+}
+
+.comment,
+.trackback {
+    border: 0px;
+}
+
+.comments-open-content
+{
+    color: #666666;
+    float: right;
+    width: 65%;
+}
+
+.trackbacks-info
+{
+    font-size: x-small;
+    color: #999999;
+}
+
+.comments-open
+{
+    clear: both;
+}
+.comments-open-header
+{
+    margin-top: 40px;
+}
+.comments-open label
+{
+    font-weight: bold;
+    color: #666666;
+    font-size: small;
+}
+
+.commenter-profile img
+{
+    vertical-align: middle;
+    margin: 0px 3px;
+    padding: 0px;
+    border: 1px solid #666666;
+    display: none;
+}
+
+.comment-header
+{
+    float: left;
+    width: 30%;
+    clear: both;
+}
+.comment-content, .trackback-content
+{
+    float: right;
+    width: 65%;
+    clear: none;
+}
+
+.trackbacks-info
+{
+    float: right;
+    width: 65%;
+}
+.trackback-header
+{
+    float: left;
+    width: 30%;
+    clear: both;
+}
+.trackback-content a
+{
+    font-size: x-small;
+}
+
+
+ .asset-name a {
+    margin-bottom: 8px;
+}
+
+.asset-name a:hover {
+    color: #000000;
+    text-decoration: none;
+}
+
+.archive-list-item {
+    margin-bottom: 5px;
+}
+
+
+/* Widget ----------------------------------------------------------------- */
+
+.widget-header,
+.widget-content {
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.widget-header { 
+    border-width: 0 0 1px;
+    border-style: solid;
+    border-color: #aaaaaa; 
+    padding: 0;
+    font-size: small; 
+    font-family: "Lucida Grande", Helvetica, Arial, Verdana, sans-serif; 
+    margin-bottom: 8px;
+    padding-bottom: .3em; 
+}
+
+.widget-header,
+.widget-header a {
+    color: #666666;
+    font-weight: bold;
+}
+
+.widget-content a {
+    color: #555555;
+}
+
+#content .widget-powered .widget-content {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #999999;
+    background-color: #cccccc;
+} 
+
+.widget-header {
+    font-size: small;
+}
+
+.widget-header a {
+    text-decoration: none;
+}
+
+.widget-header a:hover {
+    text-decoration: underline;
+}
+
+.widget-content {
+    margin-top: 5px;
+    margin-bottom: 20px;
+    font-size: x-small;
+    font-family: "Lucida Grande", Arial, Verdana, sans-serif;
+    color: #999999;
+}
+
+
+/* "Powered By" Widget */
+
+.widget-powered .widget-content {
+    padding: 10px;
+    text-align: center;
+}
+
+
+
+/* Calendar Widget */
+
+.widget-calendar .widget-content table {
+    font-size: x-small;
+}
+
+.widget-calendar .widget-content table th {
+    padding: 2px 1px;
+    text-align: center;
+    margin: 0px;
+}
+
+.widget-calendar .widget-content table td {
+    padding: 2px 3px;
+    text-align: center;
+    background: #eeeeee;
+    border: 1px solid #cccccc;
+    margin: 0px;
+}
+
+
+/* Footer Widgets */
+
+#footer .widget {
+    margin: 20px 0px;
+    width: 100%;
+}
+
+
+#footer .widget-powered, #footer .widget-content, #footer .widget {
+    padding: 0px;
+    text-align: left;
+    width: 100%;
+    float: none;
+}
+
+
+
+/* Footer ----------------------------------------------------------------- */
+
+#footer { 
+    background-color: #cccccc;
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+
+#footer-content {
+    padding: 20px 0;
+    color: #999999;
+}
+#footer-content a {
+    color: #999999;
+}
+
+
+/* Utilities -------------------------------------------------------------- */
+
+#header:after,
+#header-inner:after,
+#content:after,
+#alpha-inner:after,
+#beta-inner:after,
+#gamma-inner:after,
+#footer:after {
+    content: " ";
+    display: block;
+    visibility: hidden;
+    clear: both;
+    height: 0.1px;
+    font-size: 0.1em;
+    line-height: 0;
+}
+
+
+#header-inner,
+#content-inner,
+#footer-inner,
+.asset-body {
+    height: 1%;
+}
+
+.asset-body a
+{
+    color: #111111;
+}
+.asset-body img
+{
+    padding: 1px;
+    margin: 3px;
+    border: 1px solid #999999;
+}
+
+.asset-body blockquote
+{
+    margin: 15px;
+    padding-left:10px;
+    border-left: 1px solid #cccccc;
+}
+
+.asset-body ul, .asset-body ol
+{
+    margin: 10px;
+    padding: 5px;
+}
+
+
+/* Custom Styles ---------------------------------------------------------- */
+
+#header-nav-inner {
+    position: relative;
+    width: 900px;
+    margin: 0 auto;
+}
+
+input, select, textarea, submit, button
+{
+    background: #f6f6f6;
+    border: 1px solid #cccccc;
+    color: #333333;
+    font-size: small;
+    padding: 1px;
+    margin: 2px;
+}
+#comment-bake-cookie
+{
+    border: 0px;
+}
+
+/* Widgets go at the bottom */
+
+.layout-wt #alpha
+{
+    float: none;
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.layout-wt #beta
+{
+    width: 100%;
+    float: none;
+    margin-top: 15px;
+    background-color: #cccccc;
+    border-bottom: 0px;
+    border-top: 1px solid #aaaaaa;
+    overflow: visible;
+    
+}
+
+#alpha, #beta
+{
+    float: none;
+    display: block;
+}
+
+#beta-inner
+{
+    width: 940px;
+    margin: 0px auto -1px;
+    padding: 20px 0px 20px 0px;
+    overflow: visible;
+    clear: both;
+}
+
+.widget
+{
+    width: 185px;
+    float: left;
+    margin: 0px;
+}
+
+
+/*
+ -----------------------------------------------------
+ Hemingway Styles
+ Change these styles if you want to change the color scheme, don't mess with
+ the stuff above this line if you want to keep the same layout
+*/
+
+/*
+ This is the white-black theme, it has no color changes
+*/
